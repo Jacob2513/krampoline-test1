@@ -1,6 +1,6 @@
 FROM krmp-d2hub-idock.9rum.cc/goorm/node:18
 RUN echo `pwd`
-COPY krampoline/ ./
+#COPY krampoline/ ./
 RUN npm ci
 RUN npm run build
 RUN npm install -g serve
